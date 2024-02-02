@@ -1,0 +1,70 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.player {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  flex-direction: column;
+}
+.player #wins {
+  font-size: 20px;
+}
+.player.false {
+  color: rgb(103, 103, 103);
+}
+
+.tictactoe {
+  display: flex;
+  flex-direction: 5;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 30vw;
+  height: 30vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  background-color: white;
+}
+
+.cell {
+  background-color: #353535 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#mark {
+  color: white;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .app {
+    flex-direction: column;
+  }
+  .box {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
+.winning-cell {
+  background-color: rgb(188, 188, 18) !important;
+  color: black;
+  font-weight: bold;
+}
